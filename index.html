@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FocusFlow - To Do List</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <main class="app">
+
+        <header class="app-header">
+            <div>
+                <span class="badge">✦ PRODUCTIVITY SPACE</span>
+                <h1>Focus<span>Flow</span></h1>
+                <p>Plan it. Do it. Complete it.</p>
+            </div>
+
+            <div class="task-stat">
+                <strong id="taskCount">0</strong>
+                <span>Tasks</span>
+            </div>
+        </header>
+
+        <section class="input-card">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="What needs to be done?"
+                autocomplete="off"
+            >
+
+            <button id="addTaskBtn">
+                <span>+</span>
+                Add Task
+            </button>
+
+        </section>
+
+        <div class="progress-section">
+
+            <div class="progress-info">
+                <span>Today's Progress</span>
+                <strong id="progressText">0%</strong>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+
+        </div>
+
+        <section class="tasks-section">
+
+            <div class="section-title">
+                <h2>Your Tasks</h2>
+                <span id="remainingText">0 remaining</span>
+            </div>
+
+            <ul id="taskList"></ul>
+
+            <div id="emptyMessage" class="empty-state">
+                <div class="empty-icon">✓</div>
+                <h3>All clear!</h3>
+                <p>Add a task and start making progress.</p>
+            </div>
+
+        </section>
+
+        <footer>
+            <span>FocusFlow</span>
+            <span>•</span>
+            <span>In-Memory Task Manager</span>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
